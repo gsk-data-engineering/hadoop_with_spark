@@ -526,6 +526,22 @@ python3 hdfs_monitoring.py
 6. **Writing to HDFS**: File is split into blocks, each block is replicated to multiple DataNodes based on replication factor
 7. **Fault Tolerance**: Through data replication (default 3 copies) and automatic recovery mechanisms
 
+
+## Day 2 Assignment: Log analyzer - Part 1 - Data Ingestion Setup)
+### Assignment objective: Set up a dedicated HDFS directory for ingesting raw log data.
+Task:
+    Create a directory in HDFS specifically for raw log files: /user/project/raw_logs
+    Create a dummy log file on your local machine (e.g., dummy_log.txt) with a few lines of sample log data.
+
+    2025-06-07 10:00:01 INFO User 'john_doe' logged in from 192.168.1.10
+    2025-06-07 10:00:05 ERROR Failed to connect to database for 'jane_smith'
+    2025-06-07 10:00:10 WARN High CPU usage detected on server 'web-01'
+
+    Upload this dummy_log.txt file into the newly created HDFS directory /user/project/raw_logs.
+
+Outcome of assignment (Part 1): You should have a dummy_log.txt file present in the /user/project/raw_logs directory within HDFS, ready for future processing.
+
+
 ## Day 2 Project: HDFS File System Analyzer
 
 ### Project Objective
